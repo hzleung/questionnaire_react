@@ -1,0 +1,222 @@
+.endBox {
+  width: 92%;
+  margin-left: 4%;
+  background: white;
+  height:fit-content;
+  margin-top: 12px;
+  padding: 18.5px 15px;
+
+  .title {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    color: rgba(153, 153, 153, 1);
+
+    >img {
+      width: 15px;
+      height: 15px;
+      margin-right: 8px;
+    }
+  }
+
+  .textBox {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 18px;
+
+    >div {
+      font-size: 17px;
+      font-weight: 500;
+      color: rgba(188, 195, 204, 1);
+      margin: 6.5px;
+    }
+
+    .scape {
+      width: 16px;
+      height: 2px;
+      background: rgba(211, 219, 230, 1);
+      margin-top: 14.5px;
+    }
+  }
+}
+
+.timeBox {
+  margin-top: 17px;
+
+  .locationImg {
+    margin-top: 8px;
+    color: rgba(51, 51, 51, 1);
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+   /* autoprefixer: off */  
+   -webkit-box-orient: vertical;  
+   /* autoprefixer: on */  
+    -webkit-line-clamp:2; 
+
+    >img {
+      width: 12.5px;
+      height: 15px;
+      margin-right: 8px;
+    }
+  }
+
+  .time {
+    display: flex;
+    align-items: center;
+
+    >img {
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+
+    }
+  }
+}
+
+
+.count {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(72, 107, 105, 1);
+  height: 44px;
+  background: rgba(192, 235, 232, 1);
+  border-radius: 5px;
+  margin-left: 4%;
+  width: 92%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clockTitle {
+  margin: 13px 15.5px;
+  font-size: 17px;
+  font-weight: 500;
+  color: rgba(128, 128, 128, 1);
+}
+
+.titleBOx {
+  width: 92%;
+  margin-left: 4%;
+  height: 40px;
+  background: rgba(24, 144, 255, 1);
+  border-radius: 5px 5px 0px 0px;
+  font-size: 17px;
+  font-weight: 500;
+  color: rgba(247, 247, 252, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.calendar {
+  background: white;
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 32px;
+
+    .yellow {
+      font-size: 13px;
+      width: 14.29%;
+      font-weight: 500;
+      color: rgba(255, 176, 0, 1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 32px;
+
+    }
+
+    .normal {
+      font-size: 13px;
+      width: 14.29%;
+      font-size: 13px;
+      font-weight: 500;
+      color: rgba(163, 163, 163, 1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .contentBox {
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+
+    >div {
+      width: 14.285%;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      font-size: 14px;
+      font-weight: 600;
+      color: rgba(38, 38, 38, 1);
+
+      .blueCycle {
+        position: absolute;
+        top: 5px;
+        width: 39px;
+        height: 39px;
+        background: rgba(24, 144, 255, 1);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .lightBlueCycle {
+        position: absolute;
+        top: 5px;
+        width: 39px;
+        height: 39px;
+        background: rgba(24, 144, 255, 0.15);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .dot {
+        position: absolute;
+        bottom: -3px;
+        width: 5px;
+        height: 5px;
+        background: rgba(24, 144, 255, 1);
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.imgBox {
+  position: relative;
+
+  .nodata {
+    width: 207;
+    height: 207px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 180px;
+  }
+
+  >div {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(153, 153, 153, 1);
+  }
+}

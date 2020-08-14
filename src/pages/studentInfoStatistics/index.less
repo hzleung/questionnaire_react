@@ -1,0 +1,205 @@
+.titleBox {
+  display: flex;
+  flex-direction: row;
+
+  >div {
+    width: 25%;
+    height: fit-content;
+  }
+
+  .choicAll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(102, 102, 102, 1);
+    height: 45px;
+  }
+}
+
+.allChoicBox {
+  background: white;
+  height: fit-content;
+  padding-top: 5px;
+
+  .confirm {
+    height: 36px;
+    border: 1px solid rgba(24, 144, 255, 1);
+    border-radius: 5px;
+    width: 92%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(31, 151, 255, 1);
+    margin: 10px 0 10px 4%;
+    background: white;
+  }
+}
+
+.contentBox {
+  width: 92%;
+  margin-left: 4%;
+  padding-bottom: 20px;
+  >div {
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .departmentAdminstraction {
+    margin-top: 12px;
+    border-radius: 5px;
+
+    .detialBOx {
+      width: 92.7%;
+      margin-left: 3.65%;
+      height: fit-content;
+      padding: 14.5px 12px;
+      background: rgba(245, 247, 250, 1);
+      margin-bottom: 10px;
+
+      .detialLine {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 20px;
+        position: relative;
+
+        .detialLineTitle {
+          width: 77px;
+          font-size: 14px;
+          font-weight: 400;
+          color: rgba(153, 153, 153, 1);
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .blueBox {
+          overflow: hidden;
+          width: 90%;
+
+          .blue {
+            width: 55%;
+            height: 12px;
+            background: rgba(119, 190, 255, 1);
+            margin-left: 10px;
+          }
+        }
+
+        .detialLinePeople {
+          font-size: 14px;
+          font-weight: 500;
+          color: rgba(51, 51, 51, 1);
+          position: absolute;
+          right: 0;
+          font-size: 14px;
+          font-weight: 500;
+          color: rgba(51, 51, 51, 1);
+        }
+      }
+    }
+  }
+}
+
+.scale {
+  position: relative;
+  border: none;
+}
+
+.scale:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  background: rgba(237, 237, 237, 1);
+  // background: red;
+  width: 100%;
+  height: 1px;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  z-index: 1;
+}
+
+
+
+.nationAdminstraction {
+  margin-top: 12px;
+  border-radius: 5px;
+
+  .detialBOx {
+    width: 92.7%;
+    margin-left: 3.65%;
+    height: fit-content;
+    padding: 10px 0px;
+    // background: rgba(245, 247, 250, 1);
+    margin-bottom: 10px;
+
+    .detialLine {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 24px;
+      position: relative;
+
+      .detialLineTitle {
+        width: 77px;
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(153, 153, 153, 1);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .blueBox {
+        overflow: hidden;
+        width: 90%;
+
+        .blue {
+          width: 55%;
+          height: 12px;
+          background: rgba(119, 190, 255, 1);
+          margin-left: 10px;
+        }
+      }
+
+      .detialLinePeople {
+        font-size: 14px;
+        font-weight: 500;
+        color: rgba(51, 51, 51, 1);
+        position: absolute;
+        right: 0;
+        font-size: 14px;
+        font-weight: 500;
+        color: rgba(51, 51, 51, 1);
+      }
+    }
+  }
+}
+
+
+.muneTitle{
+  background: white;
+  text-align: center;
+  padding: 10px;
+}
+.reset{
+  width: 80%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(24, 144, 255, 1);
+  margin-left: 10%;
+  color: white;
+  border-radius: 5px;
+  margin-top: 16px;
+}
+.height{
+  height: fit-content;
+}

@@ -1,0 +1,92 @@
+.intro {
+    position  : relative;
+    width     : 100%;
+    height    : 100%;
+    background: #fff;
+
+    :global {
+        .page-header-navbar .am-navbar {
+            border-bottom: 1px solid #ddd;
+        }
+    }
+
+    .intro_box {
+        padding    : 18px;
+        color      : #333;
+        font-family: 'Microsoft YaHei';
+        text-align: center;
+
+        &__bg {
+            width : 75px;
+            height: 75px;
+            margin: 40px auto 10px;
+
+            img {
+                width : 100%;
+                height: 100%;
+            }
+        }
+
+        &__name {
+            font-size     : 18px;
+            font-weight   : bold;
+            line-height: 36px;
+        }
+
+        &__desc {
+            padding: 7px;
+            font-size  : 12px;
+            font-weight: 400;
+            text-align: justify;
+            line-height: 24px;
+        }
+
+        &__btn {
+            position: absolute;
+            bottom: 25px;
+            width        : 339px;
+            height       : 40px;
+            background   : #2E7BFF;
+            border-radius: 31px;
+            color: #fff;
+            text-align: center;
+            line-height: 40px;
+        }
+    }
+
+}
+
+.loading {
+    position: relative;
+
+    &_text {
+        font-size  : 13px;
+        font-family: 'Microsoft YaHei';
+        font-weight: 400;
+        color      : #666;
+    }
+
+    &_img {
+        width : 25px;
+        height: 25px;
+        margin: 10px auto 0;
+
+        img {
+            width : 100%;
+            height: 100%;
+        }
+
+        .loading_img__icon {
+            animation: loading 2s linear infinite; // infinite 无限循环
+        }
+        
+        @keyframes loading{
+            form{
+              transform: rotate(0turn);
+            }
+            to{
+              transform: rotate(1turn);
+            }
+          }
+    }
+}

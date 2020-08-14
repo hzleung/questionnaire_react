@@ -1,0 +1,30 @@
+  .page-header {
+    height: 0.88rem;
+  }
+  .page-header-navbar {
+    height: 0.9rem;
+    .am-navbar {
+      background-color: white;
+
+      .am-navbar-title {
+        font-size: 0.32rem;
+      }
+      svg {
+        height: 0.4rem;
+        width: 0.4rem;
+        color: #000;
+      }
+    }
+    &.page-header-fixed {
+      position: fixed;
+      z-index: 100;
+      top: 0;
+      left: 0;
+      right: 0;
+      transform: translate3d(0, -104%, 0);
+      transition: transform 0.3s ease-in-out;
+    }
+    &.page-header-fixed.page-header-fixed-open {
+      transform: translate3d(0, 0, 0);
+    }
+  }

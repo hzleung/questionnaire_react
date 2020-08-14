@@ -1,0 +1,89 @@
+@import '~antd/lib/style/themes/default.less';
+
+.exception {
+  display: flex;
+  align-items: center;
+  height: 80%;
+  min-height: 10rem;
+
+  .imgBlock {
+    flex: 0 0 62.5%;
+    width: 62.5%;
+    padding-right: 3.04rem;
+    zoom: 1;
+    &:before,
+    &:after {
+      content: ' ';
+      display: table;
+    }
+    &:after {
+      clear: both;
+      visibility: hidden;
+      font-size: 0;
+      height: 0;
+    }
+  }
+
+  .imgEle {
+    height: 7.2rem;
+    width: 100%;
+    max-width: 8.6rem;
+    float: right;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+
+  .content {
+    flex: auto;
+
+    h1 {
+      color: #434e59;
+      font-size: 1.44rem;
+      font-weight: 600;
+      line-height: 1.44rem;
+      margin-bottom: 0.48rem;
+    }
+
+    .desc {
+      color: @text-color-secondary;
+      font-size: 0.4rem;
+      line-height: 0.56rem;
+      margin-bottom: 0.32rem;
+    }
+
+    .actions {
+      button:not(:last-child) {
+        margin-right: 0.16rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @screen-xl) {
+  .exception {
+    .imgBlock {
+      padding-right: 1.76rem;
+    }
+  }
+}
+
+@media screen and (max-width: @screen-sm) {
+  .exception {
+    display: block;
+    text-align: center;
+    .imgBlock {
+      padding-right: 0;
+      margin: 0 auto 0.48rem;
+    }
+  }
+}
+
+@media screen and (max-width: @screen-xs) {
+  .exception {
+    .imgBlock {
+      margin-bottom: -0.48rem;
+      overflow: hidden;
+    }
+  }
+}

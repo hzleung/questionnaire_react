@@ -1,0 +1,261 @@
+:global {
+
+    /* reset */
+    html {
+        -webkit-text-size-adjust: none;
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+        font-family: Helvetica;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    dl,
+    dd,
+    ul,
+    ol,
+    pre,
+    form,
+    input,
+    textarea,
+    th,
+    td,
+    select {
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+        text-indent: 0;
+    }
+
+    a,
+    button,
+    input,
+    textarea,
+    select {
+        background: none;
+        -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+        outline: none;
+        -webkit-appearance: none;
+    }
+
+    em {
+        font-style: normal;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    img {
+        border: none;
+        vertical-align: top;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    textarea {
+        resize: none;
+        overflow: auto;
+    }
+
+    /* end reset */
+
+    ol,
+    ul {
+        list-style: none;
+    }
+
+    blockquote,
+    q {
+        quotes: none;
+    }
+
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+        content: '';
+        content: none;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    /* iphonex 兼容方案
+  https://aotu.io/notes/2017/11/27/iphonex/index.html */
+
+    html,
+    body,
+    #root {
+        height: 100%;
+        background: rgba(242, 244, 247, 1);
+    }
+
+    /* iphonex 安全区域 */
+    body {
+        margin: 0;
+        overflow-x: hidden;
+        background-color: #fff !important;
+        padding-bottom: constant(safe-area-inset-bottom);
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+
+    /* iphonex fix底部元素适配 */
+    .fixed_bottom {
+        padding-bottom: constant(safe-area-inset-bottom);
+        padding-bottom: env(safe-area-inset-bottom);
+        position: fixed;
+        z-index: 10;
+        background-color: #fff;
+    }
+
+    .clearfix:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    .text-danger {
+        color: red
+    }
+
+    // 重置antd-mobile样式
+
+    //List组件样式
+    .am-list-body {
+
+        // 减淡border颜色
+        border-top: 1PX solid #eee !important;
+        border-bottom: 1PX solid #eee !important;
+
+        .am-textarea-item {
+            flex-flow: column;
+            border-color: #eee !important;
+
+            .am-textarea-label {
+                width: 100% !important;
+            }
+
+            .am-textarea-control {
+                width: 100% !important;
+            }
+        }
+
+        // 重置listitem下边框线条颜色（减淡）
+        div:not(:last-child) {
+            .am-list-line {
+                border-bottom: 1PX solid #eee !important;
+            }
+        }
+
+        // 覆盖单选按钮最后一个选项下框线重叠问题
+        div.am-radio-item:last-child {
+            .am-list-line {
+                border-bottom: 0 !important;
+            }
+        }
+    }
+
+    //List头部样式
+    .am-list-header {
+        padding: 0.18rem 0.3rem 0.18rem 0.3rem !important;
+    }
+
+    //Modal样式
+    .am-modal-popup-slide-up {
+
+        //调整title样式垂直居中
+        .am-modal-content {
+            padding-top: 9px;
+        }
+
+    }
+
+    //Picker样式
+    .am-picker-popup-header {
+        //header分割线重叠问题
+        border-bottom: none !important;
+    }
+
+    //重置动态表单样式
+    .nh-dynamic-Form {
+
+        // 动态表单 InputItem 输入框文字排版统一从右开始
+        .nh-input-item {
+            .am-input-control {
+                input {
+                    text-align: right !important;
+                }
+            }
+            div.am-input-label {
+                width: 100px;
+            }
+        }
+
+        // 动态表单 picker 选择器禁用时，统一减淡label和extra颜色
+        .nh-inputrender-disabled {
+            .am-list-content {
+                color: #bbb !important;
+            }
+
+            .am-list-extra {
+                color: #bbb !important;
+            }
+        }
+        .am-list-item.am-list-item-error .am-image-picker-list .am-image-picker-upload-btn {
+            border: 1px solid #ff5b05;
+        }
+        .nh-dynamic-required {
+            .am-textarea-label::before {
+                color: #ff4d4f;
+                font-size: 14px;
+                font-family: SimSun,sans-serif;
+                line-height: 1;
+                content: '*';
+            }
+            .am-input-label::before{
+                color: #ff4d4f;
+                font-size: 14px;
+                font-family: SimSun,sans-serif;
+                line-height: 1;
+                content: '*';
+            }
+            .am-list-content::before{
+                color: #ff4d4f;
+                font-size: 14px;
+                font-family: SimSun,sans-serif;
+                line-height: 1;
+                content: '*';
+            }
+        }
+        .am-list-body div.nh-dynamic-list-item:not(:last-child) .am-textarea-item {
+            border-bottom: 1PX solid #ddd;
+        }
+        .nh-radio-form-header{
+            color: #000;
+            font-size: 0.34rem;
+            text-align: left;
+            width: auto;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .nh-dynamic-form-disabled{
+            color: #bbb
+        }
+    }
+}

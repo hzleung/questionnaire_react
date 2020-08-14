@@ -1,0 +1,321 @@
+.answer {
+    position  : relative;
+    width     : 100%;
+    height    : 100%;
+    background: #fff;
+
+    :global {
+        .page-header-navbar .am-navbar {
+            border-bottom: 1px solid #ddd;
+        }
+    }
+
+    .answer_box {
+        padding: 18px;
+
+        .top {
+            display        : flex;
+            align-items    : center;
+            justify-content: space-between;
+
+            .process {
+                font-family: 'Microsoft YaHei';
+
+                &_text {
+                    display           : flex;
+                    align-items       : center;
+                    justify-content   : space-between;
+                    font-size         : 12px;
+                    font-weight       : 400;
+                    // line-height    : 15px;
+                    color             : #999;
+                    margin-bottom     : 5px;
+                }
+
+                &_view {
+                    width        : 257px;
+                    height       : 8px;
+                    background   : #E5EFFF;
+                    border-radius: 67px;
+
+                    div {
+                        width        : 78px;
+                        height       : 100%;
+                        background   : #2E7BFF;
+                        border-radius: 67px;
+                    }
+                }
+            }
+
+            .submit {
+                width        : 70px;
+                height       : 32px;
+                border       : 1px solid #2E7BFF;
+                border-radius: 29px;
+                color        : #2E7BFF;
+                text-align   : center;
+                line-height  : 32px;
+
+                &:hover,
+                &:active {
+                    background  : #2E7BFF;
+                    color       : #fff;
+                    border-color: #2E7BFF;
+                }
+            }
+        }
+
+        .answer_list {
+            position  : relative;
+            min-height: 364px;
+            margin-top: 18px;
+            overflow  : hidden;
+
+
+            .answer_view {
+                position  : absolute;
+                left      : 0;
+                display   : flex;
+                width     : 100%;
+                transition: all linear 0.3s;
+
+                .answer_item {
+                    min-width  : 100%;
+                    font-family: 'Microsoft YaHei';
+
+                    .answer_type {
+                        font-size    : 12px;
+                        font-weight  : 400;
+                        color        : #333;
+                        line-height  : 16px;
+                        margin-bottom: 10px;
+                    }
+
+                    .answer_area {
+                        width        : 100%;
+                        min-height   : 298px;
+                        max-height   : 375px;
+                        padding      : 10px 0;
+                        background   : rgba(46, 123, 255, 0.05);
+                        border-radius: 5px;
+                        overflow     : scroll;
+
+                        :global {
+                            .am-list-item {
+                                padding-left    : 0;
+                                background-color: rgba(46, 123, 255, 0.05);
+                            }
+
+                            .am-list-header {
+                                font-size  : 13px;
+                                font-weight: bold;
+                                line-height: 26px;
+                                color      : #333;
+                                max-height : 142px;
+                                overflow   : scroll;
+                                text-align : justify;
+                            }
+
+                            .am-list-line {
+                                border-bottom: none !important;
+                            }
+
+                            .am-list-item .am-list-line .am-list-content {
+                                padding-left: 40px;
+                                font-size   : 13px;
+                                color       : #333;
+                            }
+
+                            .am-radio.am-radio-checked .am-radio-inner:after {
+                                display: none;
+                            }
+
+                            .am-checkbox-item .am-list-line .am-list-content {
+                                padding     : 10px;
+                                padding-left: 4px;
+                            }
+
+                            .am-list .am-list-item.am-radio-item .am-list-line .am-list-extra .am-radio-inner {
+                                right        : 0;
+                                left         : 0.3rem;
+                                border       : 1px solid #ccc;
+                                border-radius: 50%;
+                                width        : 18px;
+                                height       : 18px;
+                                top          : 0.26rem;
+                            }
+
+                            .am-radio.am-radio-checked .am-radio-inner {
+                                border: 5px solid #1890FF !important;
+                            }
+
+                            .am-list .am-list-item.am-checkbox-item .am-list-thumb .am-checkbox-inner {
+                                width : 0.36rem;
+                                height: 0.36rem;
+                                top   : 0.28rem;
+                            }
+
+                            .am-checkbox-inner:after {
+                                border-width: 0 0.03rem 0.03rem 0;
+                                width       : 0.10rem;
+                                height      : 0.18rem;
+                            }
+
+                            .am-list-body {
+                                border-top   : none !important;
+                                border-bottom: none !important;
+                            }
+
+                            .am-list .am-list-item.am-textarea-item {
+                                padding-left : 0;
+                                padding-right: 0;
+
+                                .am-textarea-control {
+                                    width        : 93% !important;
+                                    background   : #fff;
+                                    margin       : 0 auto;
+                                    padding      : 0.2rem;
+                                    padding-right: 0;
+
+                                    textarea {
+                                        color        : #333;
+                                        font-size    : 13px;
+                                        font-family  : 'Microsoft YaHei';
+                                        text-align   : justify;
+                                        padding-right: 14px;
+
+                                        &::placeholder {
+                                            font-size  : 13px;
+                                            font-family: 'Microsoft YaHei';
+                                            font-weight: 400;
+                                            color      : #ccc;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .am-list-item .am-input-label.am-input-label-5 {
+                                width      : 60px;
+                                text-align : center;
+                                font-size  : 13px;
+                                color      : #666;
+                                font-family: 'Microsoft YaHei';
+                            }
+
+                            .am-list-item .am-input-control input {
+                                background-color: #fff;
+                                line-height     : 3;
+                                padding         : 8px;
+                                font-size       : 13px;
+                                color           : #666;
+                                caret-color     : #2E7BFF;
+                            }
+
+                            .am-list-item.am-input-item .am-list-line {
+                                padding-left: 15px;
+                            }
+
+                            .am-list-item.am-input-item {
+                                height        : 69px;
+                                padding-top   : 15px;
+                                padding-bottom: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .btn {
+            width      : 339px;
+            position   : absolute;
+            bottom     : 25px;
+            font-family: 'Microsoft YaHei';
+            font-size  : 13px;
+            font-weight: 400;
+            line-height: 40px;
+            color      : #fff;
+            text-align : center;
+
+            .btn_pre {
+                width        : 100%;
+                height       : 40px;
+                background   : #E9F1FF;
+                border-radius: 31px;
+                margin-bottom: 12px;
+                color        : #2E7BFF;
+            }
+
+            .btn_next {
+                width        : 100%;
+                height       : 40px;
+                background   : #2E7BFF;
+                border-radius: 31px;
+            }
+        }
+
+        .sidebar_box {
+            width   : 40px;
+            height  : 36px;
+            position: fixed;
+            right   : 0;
+            bottom  : 135px;
+
+            img {
+                width : 100%;
+                height: 100%;
+            }
+
+            // .sidebar {
+            //     position: relative;
+            //     overflow: auto;
+            //     -webkit-overflow-scrolling: touch;
+            //   }
+            //   .sidebar .am-drawer-sidebar {
+            //     background-color: #fff;
+            //     overflow: auto;
+            //     -webkit-overflow-scrolling: touch;
+            //   }
+            //   .sidebar .am-drawer-sidebar .am-list {
+            //     width: 300px;
+            //     padding: 0;
+            //   }
+        }
+    }
+
+}
+
+.loading {
+    position: relative;
+
+    &_text {
+        font-size  : 13px;
+        font-family: 'Microsoft YaHei';
+        font-weight: 400;
+        color      : #666;
+    }
+
+    &_img {
+        width : 25px;
+        height: 25px;
+        margin: 10px auto 0;
+
+        img {
+            width : 100%;
+            height: 100%;
+        }
+
+        .loading_img__icon {
+            animation: loading 2s linear infinite; // infinite 无限循环
+        }
+        
+        @keyframes loading{
+            form{
+              transform: rotate(0turn);
+            }
+            to{
+              transform: rotate(1turn);
+            }
+          }
+    }
+}

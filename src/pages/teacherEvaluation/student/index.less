@@ -1,0 +1,148 @@
+.scale {
+  position: relative;
+  border: none;
+}
+
+.scale:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  background: rgba(230, 230, 230, 1);
+  width: 100%;
+  height: 1px;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.scale_2 {
+  position: relative;
+  border: none;
+}
+
+.scale_2:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  background: rgba(230, 230, 230, 1);
+  width: 92%;
+  margin-left: 4%;
+  height: 1px;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.bg {
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  // z-index: -1;
+}
+
+.task {
+    >h1 {
+        font-size: 24px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 1);
+        margin: 0px;
+        margin-top: 20px;
+        text-align: center;
+        position: relative;
+      }
+
+     >h2 {
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        position: relative;
+        margin-top: 12px;
+        color: rgba(255, 255, 255, 1);
+      }
+}
+
+.situationBox {
+  width: 92%;
+  margin-left: 4%;
+  background: white;
+  border-radius: 5px;
+  position: relative;
+  margin-top: 15px;
+
+  .title {
+    width: 186px;
+    height: fit-content;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgba(26, 26, 26, 1);
+    padding: 15px;
+    white-space: nowrap;
+  }
+
+  .detialBox {
+    display: flex;
+    flex-direction: row;
+    min-height: 50px;
+    padding: 5% 17px;
+    position: relative;
+
+    .name {
+      font-size: 16px;
+      font-weight: 400;
+      color: rgba(51, 51, 51, 1);
+    }
+
+    .statusStudent {
+      width: fit-content;
+      height: fit-content;
+      border: 1px solid rgba(97, 150, 196, 1);
+      padding: 3.5px 6px 4px 6px;
+      font-size: 13px;
+      font-weight: 400;
+      color: rgba(97, 150, 196, 1);
+      margin: -2px 17px;
+    }
+
+    .statusClass {
+      width: fit-content;
+      height: fit-content;
+      border: 1px solid rgba(150, 194, 107, 1);
+      padding: 3.5px 6px 4px 6px;
+      font-size: 13px;
+      font-weight: 400;
+      color: rgba(150, 194, 107, 1);
+      margin: -2px 17px;
+    }
+
+    .grade {
+      position: absolute;
+      font-size: 15px;
+      font-weight: 400;
+      color: rgba(51, 51, 51, 1);
+      right: 37px;
+      top: 19px;
+    }
+
+    .gray {
+      position: absolute;
+      font-size: 15px;
+      font-weight: 400;
+      color: rgba(153, 153, 153, 1);
+      right: 37px;
+      top: 19px;
+    }
+
+    >img {
+      width: 6px;
+      height: 10px;
+      opacity: 0.6;
+      position: absolute;
+      right: 17px;
+      top: 23px;
+    }
+  }
+}
+

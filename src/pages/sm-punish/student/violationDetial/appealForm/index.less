@@ -1,0 +1,115 @@
+.titleBox {
+  padding: 20px 16px;
+  height: fit-content;
+  background: white;
+
+  >p {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(51, 51, 51, 1);
+  }
+
+  >div {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(153, 153, 153, 1);
+    margin-top: 12px;
+  }
+}
+
+.baseInfo {
+  margin-top: 12px;
+  background: white;
+  margin-bottom: 12px;
+
+  .btitleBox {
+    padding: 14.5px;
+    display: flex;
+    flex-direction: row;
+
+    // margin-bottom: 14px;
+    .blue {
+      width: 3px;
+      height: 16px;
+      background: rgba(24, 144, 255, 1);
+    }
+
+    .title {
+      font-size: 16px;
+      font-weight: 400;
+      color: rgba(26, 26, 26, 1);
+    }
+  }
+
+  .contentBox {
+    background: white;
+    margin: 0 14px 14px 14px;
+    padding-bottom: 12px;
+
+    .contentLine {
+      display: flex;
+      flex-direction: row;
+      height: fit-content;
+      padding-top: 12px;
+
+      .gray {
+        font-size: 15px;
+        font-weight: 400;
+        color: rgba(153, 153, 153, 1);
+        white-space: nowrap;
+      }
+
+      .values {
+        font-size: 15px;
+        font-weight: 400;
+        color: rgba(51, 51, 51, 1);
+      }
+
+      .valueBlue {
+        font-size: 15px;
+        font-weight: 400;
+        color: rgba(24, 144, 255, 1);
+      }
+    }
+  }
+}
+
+
+.scale {
+  position: relative;
+  border: none;
+}
+
+.scale:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  background: rgba(230, 230, 230, 1);
+  width: 100%;
+  height: 1px;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.btnBox {
+  background: white;
+  position: fixed;
+  bottom: 0;
+  height: fit-content;
+  padding: 6px 15px;
+  width: 100%;
+  .btn {
+    width: 92%;
+    margin-left: 4%;
+    height: 44px;
+    background: rgba(24, 144, 255, 1);
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    padding-top: 11px;
+  }
+}

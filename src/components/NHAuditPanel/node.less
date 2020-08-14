@@ -1,0 +1,187 @@
+body{
+    background: rgba(242, 244, 247, 1);
+  }
+  .titleBox {
+    height: 40px;
+    width: 100%;
+    background: rgba(236, 246, 255, 1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    >img {
+      width: 16px;
+      height: 16px;
+      margin: 0 6.5px 0 15px;
+      vertical-align: middle;
+    }
+
+    >div {
+      font-size: 15px;
+      font-weight: 400;
+      color: rgba(24, 144, 255, 1);
+      line-height: 18px;
+    }
+  }
+
+  .addUser {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    >img {
+      width: 16px;
+      height: 16px;
+      margin: 0 6.5px 0 15px;
+      vertical-align: middle;
+    }
+
+    >div {
+      font-size: 15px;
+      font-weight: 400;
+      color: rgba(24, 144, 255, 1);
+      line-height: 18px;
+    }
+  }
+
+
+  .nextstuff {
+    background: white;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 15.5px;
+
+    .title {
+      font-size: 17px;
+      font-weight: 400;
+      color: rgba(51, 51, 51, 1);
+      line-height: 18px;
+    }
+
+    .radio {
+      margin-left: 47.5px;
+    }
+  }
+
+  .nextPeople {
+    background: white;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    padding: 18px 0 15px 13.5px;
+
+    .title {
+      font-size: 17px;
+      font-weight: 400;
+      color: rgba(51, 51, 51, 1);
+      line-height: 18px;
+      width: fit-content;
+      white-space: nowrap;
+    }
+
+    .peopleBox {
+      margin-left: 31.5px;
+      width: 100%;
+
+      .checkBoxTitle {
+        font-size: 15px;
+        font-weight: 400;
+        color: rgba(153, 153, 153, 1);
+      }
+    }
+  }
+
+  .scale {
+    position: relative;
+    border: none;
+  }
+
+  .scale:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    background: rgba(230, 230, 230, 1);
+    width: 96%;
+    margin-left: 4%;
+    height: 1px;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+
+
+  .scale_1 {
+    position: relative;
+    border: none;
+  }
+
+  .scale_1:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    background: rgba(230, 230, 230, 1);
+    width: 100%;
+    // margin-left: 4%;
+    height: 1px;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+
+  .opinionBox {
+    background: white;
+    // height: 52px;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+
+    // padding: 18px 0 15px 13.5px;
+    .title {
+      font-size: 17px;
+      font-weight: 400;
+      color: rgba(51, 51, 51, 1);
+      line-height: 18px;
+      width: fit-content;
+      white-space: nowrap;
+      margin: 18px 0 0 13.5px;
+    }
+
+    .opinion {
+      width: 100%;
+      margin-left: 48px;
+      >div{
+          >div{
+              >div{
+                  >div:first-child{
+                    font-size:17px !important;
+                    text-align: left !important;
+                    color:rgba(153,153,153,1) !important;
+                    flex-basis: initial !important;
+                    width: 100% !important;
+                  }
+              }
+          }
+      }
+    }
+  }
+
+  .bottomBtn {
+    width: 92%;
+    margin-left: 4%;
+    height: 44px;
+    background: rgba(24, 144, 255, 1);
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    padding-top: 8px;
+    margin-top: 50px;
+  }

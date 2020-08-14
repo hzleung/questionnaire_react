@@ -1,0 +1,113 @@
+.box {
+    margin-bottom: 12px;
+    padding: 15px;
+    height: 99px;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    vertical-align: middle;
+    border-radius:5px;
+    >img {
+      width: 6.7px;
+      height: 12.7px;
+      margin-top: 28px;
+    }
+
+    >div {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+
+      .title {
+        font-size: 17px;
+        font-weight: 500;
+        color: rgba(51, 51, 51, 1);
+      }
+
+      .time {
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(153, 153, 153, 1);
+      }
+
+      .doing {
+        font-size: 14px;
+        font-weight: 500;
+        color: rgba(24, 144, 255, 1);
+      }
+    }
+  }
+
+
+
+
+
+  .boxGray {
+    margin-bottom: 12px;
+    padding: 15px;
+    height: 99px;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    vertical-align: middle;
+    border-radius:5px;
+    >img {
+      width: 6.7px;
+      height: 12.7px;
+      margin-top: 28px;
+      opacity: 0.6;
+    }
+
+    >div {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+
+      .title {
+        font-size: 17px;
+        font-weight: 500;
+        color:rgba(153,153,153,1);
+      }
+      .gray{
+        color: rgba(153, 153, 153, 1);
+      }
+
+      .time {
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(153, 153, 153, 1);
+      }
+    }
+  }
+  .bg {
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    // z-index: -1;
+  }
+  .imgBox {
+    position: relative;
+
+    .nodata {
+      width: 207;
+      height: 207px;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      margin-top: 180px;
+    }
+
+    >div {
+      position: absolute;
+      bottom: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 16px;
+      font-weight: 400;
+      color: rgba(153, 153, 153, 1);
+    }
+  }

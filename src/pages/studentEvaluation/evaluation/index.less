@@ -1,0 +1,193 @@
+body {
+  background: rgba(242, 244, 247, 1);
+}
+
+.titleBox {
+  width: 100%;
+  height: 105px;
+  background: linear-gradient(225deg, rgba(110, 181, 247, 1), rgba(73, 161, 242, 1));
+  border-radius: 5px;
+
+  .title {
+    width: 58.26%;
+    height: 32px;
+    background: rgba(192, 235, 232, 1);
+    border-radius: 0px 0px 8px 8px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    color: rgba(72, 107, 105, 1);
+    padding-top: 4.5px;
+  }
+
+  .titleInfo {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 20.5px;
+  }
+
+  .whiteSpace {
+    width: 22%;
+    height: 2px;
+    background: rgba(255, 255, 255, 1);
+    margin-left: 39%;
+    margin-top: 12px;
+  }
+}
+
+.itemsBox {
+  width: 100%;
+  height: fit-content;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 5px;
+  padding: 18px 15.5px 4px 14.5px;
+
+  .items {
+    .title {
+      font-size: 17px;
+      font-weight: 500;
+      color: rgba(51, 51, 51, 1);
+      margin-bottom: 18px;
+      width: fit-content;
+    }
+
+    .item {
+      margin-bottom: 14px;
+
+      .content {
+        font-size: 15px;
+        font-weight: 400;
+        color: rgba(102, 102, 102, 1);
+      }
+
+      .info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 22px;
+
+        .hint {
+          font-size: 14px;
+          font-weight: 400;
+          color: rgba(153, 153, 153, 1);
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+.scale {
+  position: relative;
+  border: none;
+}
+
+.scale:after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  background: rgba(237, 237, 237, 1);
+  width: 100%;
+  height: 1px;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  // margin: -15px 0;
+
+}
+
+
+.switchItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  // margin-bottom: 10px;
+  .title {
+    font-size: 17px;
+    font-weight: 500;
+    color: rgba(51, 51, 51, 1);
+    margin-bottom: 18px;
+    width: fit-content;
+  }
+
+  .switch {
+    .hint{
+      
+    }
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2px;
+  }
+}
+
+.switchItemBox {
+  padding-bottom: 10px;
+}
+
+.submit {
+  width: 100%;
+  /* margin-left: 4%; */
+  height: 44px;
+  background: #1890ff;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 25px;
+  padding-top: 10px;
+  margin-top: 24px;
+  text-align: center;
+
+  -webkit-animation-name: fadeIn;
+  /*动画名称*/
+  -webkit-animation-duration: 0.5s;
+  /*动画持续时间*/
+  -webkit-animation-iteration-count: 1;
+  /*动画次数*/
+  -webkit-animation-delay: 0s;
+  /*延迟时间*/
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    /*初始状态 透明度为0*/
+  }
+  100% {
+    opacity: 1;
+    /*结尾状态 透明度为1*/
+  }
+}
+
+.buttonGroup{
+  display: flex;
+  justify-content: space-between;
+  >div{
+    width: 47%;
+  }
+}
+
+.my-drawer {
+  position: relative;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+}
+
+.drawerBox{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: white;
+}
+.drawerContentBox{
+  position: relative;
+}
